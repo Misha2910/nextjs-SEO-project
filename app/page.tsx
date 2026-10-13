@@ -15,7 +15,6 @@ export default function Home() {
       />
 
       <main className="container page-content">
-        {/* Hero */}
         <section className="hero">
           <p>Welcome</p>
           <h1>Find the home service you need</h1>
@@ -26,7 +25,6 @@ export default function Home() {
           <a className="button" href="#services">Explore Services</a>
         </section>
 
-        {/* Services */}
         <section id="services">
           <h2>Our Services</h2>
           <div className="services-grid">
@@ -42,7 +40,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Locations */}
         <section id="locations">
           <h2>Our Service Areas</h2>
           <div className="locations-grid">
@@ -58,7 +55,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact */}
         <section id="contact">
           <h2>Contact Us</h2>
           <ContactForm />

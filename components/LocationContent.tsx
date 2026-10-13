@@ -15,14 +15,12 @@ export default function LocationContent({ location }: LocationContentProps) {
 
   return (
     <main className="container page-content">
-      {/* Breadcrumb */}
       <nav aria-label="Breadcrumb">
         <Link href="/">Home</Link>
         <Link href="/location">Locations</Link>
         <span>{location.name}</span>
       </nav>
 
-      {/* Hero */}
       <section className="hero">
         <p>Service Location</p>
         <h1>{location.name}</h1>
@@ -30,7 +28,6 @@ export default function LocationContent({ location }: LocationContentProps) {
         <a className="button" href="#available-services">Explore Services</a>
       </section>
 
-      {/* Available Services */}
       <section className="available-services" id="available-services">
         <h2>Services Available in {location.name}</h2>
         {availableServices.length > 0 ? (
@@ -50,7 +47,6 @@ export default function LocationContent({ location }: LocationContentProps) {
         )}
       </section>
 
-      {/* Benefits */}
       <section>
         <h2>Why Choose Us in {location.name}</h2>
         <ul className="benefits-list">
@@ -60,10 +56,8 @@ export default function LocationContent({ location }: LocationContentProps) {
         </ul>
       </section>
 
-      {/* FAQ */}
       <FAQSection faqs={location.faq} />
 
-      {/* Related Locations */}
       {location.relatedLocations.length > 0 && (
         <section>
           <h2>Other Locations</h2>

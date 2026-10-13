@@ -10,14 +10,12 @@ interface ServiceContentProps {
 export default function ServiceContent({ service }: ServiceContentProps) {
   return (
     <main className="container page-content">
-      {/* Breadcrumb */}
       <nav aria-label="Breadcrumb">
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>
         <span>{service.name}</span>
       </nav>
 
-      {/* Hero */}
       <section className="hero">
         <p>Service</p>
         <h1>{service.name}</h1>
@@ -25,7 +23,6 @@ export default function ServiceContent({ service }: ServiceContentProps) {
         <a className="button" href="#benefits">View Benefits</a>
       </section>
 
-      {/* Benefits */}
       <section id="benefits">
         <h2>Benefits</h2>
         <ul className="benefits-list">
@@ -35,10 +32,8 @@ export default function ServiceContent({ service }: ServiceContentProps) {
         </ul>
       </section>
 
-      {/* FAQ */}
       <FAQSection faqs={service.faq} />
 
-      {/* Related Services */}
       {service.relatedServices.length > 0 && (
         <section>
           <h2>Related Services</h2>
@@ -51,7 +46,6 @@ export default function ServiceContent({ service }: ServiceContentProps) {
         </section>
       )}
 
-      {/* Related Locations */}
       {service.relatedLocations.length > 0 && (
         <section>
           <h2>Available Locations</h2>
